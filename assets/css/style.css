@@ -1,1 +1,127 @@
+/* Base */
+:root{
+  --text: #111;
+  --muted: #666;
+  --bg: #fff;
+  --pill-bg: #111;
+  --pill-text: #fff;
 
+  --maxw: 980px;
+  --side-pad: 56px;
+  --top-pad: 44px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+.site-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--top-pad) var(--side-pad) 24px var(--side-pad);
+}
+
+.site-name{
+  text-decoration: none;
+  color: var(--text);
+  letter-spacing: 0.5px;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+/* Nav */
+.site-nav{
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.site-nav a{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 17px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.site-nav a:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Active pill */
+.site-nav a.is-active{
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  text-decoration: none;
+}
+
+/* Main layout */
+.page{
+  padding: 0 var(--side-pad) 80px var(--side-pad);
+}
+
+.bio, .content{
+  max-width: var(--maxw);
+  margin: 120px auto 0 auto;
+}
+
+/* Bio text spacing */
+.bio p{
+  margin: 0 0 28px 0;
+}
+
+/* CV link */
+.cv-link a{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Simple headings for inner pages */
+.content h1{
+  margin: 0 0 18px 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  :root{
+    --side-pad: 22px;
+    --top-pad: 22px;
+  }
+
+  .site-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .bio, .content{
+    margin-top: 56px;
+  }
+
+  .site-nav{
+    flex-wrap: wrap;
+    gap: 12px 14px;
+  }
+}
