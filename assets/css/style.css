@@ -80,33 +80,6 @@ body{
   padding: 0 var(--side-pad) 80px var(--side-pad);
 }
 
-/* About hero diagram */
-.about-hero{
-  max-width: 1320px;       /* 화면에서 크게 보이게 */
-  margin: 34px auto 0 auto;
-  padding: 0 var(--side-pad);
-}
-
-.about-hero img{
-  width: 100%;
-  height: 420px;           
-  object-fit: cover;       
-  display: block;
-  border-radius: 2px;
-}
-
-/* About 텍스트는 hero 아래로 자연스럽게 이어지게 */
-.bio{
-  margin-top: 56px;        
-
-/* Responsive */
-@media (max-width: 900px){
-  .about-hero img{
-    height: 340px;
-  }
-}
-
-
 .bio, .content{
   max-width: var(--maxw);
   margin: 120px auto 0 auto;
