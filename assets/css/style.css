@@ -97,8 +97,12 @@ body{
 }
 
 .site-nav a:hover{
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration: none;
+  background: linear-gradient(120deg,#5b00ff,#3b82f6,#ec4899,#ff0000);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heatFlow 2.6s ease infinite;
 }
 
 /* Active pill */
@@ -128,6 +132,23 @@ body{
   color: var(--text);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.cv-link a:hover{
+  text-decoration: none;
+
+  background: linear-gradient(
+    120deg,
+    #5b00ff,
+    #3b82f6,
+    #ec4899,
+    #ff0000
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: heatFlow 2.6s ease infinite;
 }
 
 /* Simple headings for inner pages */
