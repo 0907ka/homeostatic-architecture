@@ -293,6 +293,7 @@ body{
   text-decoration: none;
   color: var(--text);
   display: block;
+  position: relative;
 }
 
 .research-card img{
@@ -313,6 +314,41 @@ body{
 
 .research-card:hover img{
   filter: grayscale(100%);
+}
+
+.research-card::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  pointer-events: none;
+
+  /* 처음엔 안 보이게 */
+  opacity: 0;
+
+  background: linear-gradient(
+    120deg,
+    #5b00ff,
+    #3b82f6,
+    #ec4899,
+    #ff0000
+  );
+  background-size: 200% 200%;
+
+  /* 테두리만 남기기 */
+  padding: 1.5px;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  transition: opacity 0.25s ease;
+}
+
+.research-card:hover::after{
+  opacity: 1;
+  animation: heatFlow 2.6s ease infinite;
 }
 
 .research-title{
