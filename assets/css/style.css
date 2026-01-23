@@ -82,7 +82,7 @@ body{
 
 .bio, .content{
   max-width: var(--maxw);
-  margin: 120px auto 0 auto;
+  margin: 60px auto 0 auto;
 }
 
 /* Bio text spacing */
@@ -118,7 +118,7 @@ body{
   }
 
   .bio, .content{
-    margin-top: 24px;
+    margin-top: 56px;
   }
 
   .site-nav{
