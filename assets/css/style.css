@@ -143,6 +143,38 @@ body{
   object-fit: contain;
 }
 
+.about-slider{
+  position: relative;
+}
+
+.slider-viewport{
+  overflow: hidden;
+}
+
+.slider-track{
+  display: flex;
+  transition: transform 220ms ease;
+}
+
+.slide{
+  flex: 0 0 100%;
+}
+
+/* arrows */
+.slider-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 44px;
+  cursor: pointer;
+  color: #111;
+}
+
+.slider-btn.prev{ left: 0; }
+.slider-btn.next{ right: 0; }
+
 /* Research grid */
 .research-grid{
   max-width: 1320px;
