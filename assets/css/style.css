@@ -228,6 +228,34 @@ body{
   pointer-events: auto;  /* 버튼은 클릭 허용 */
 }
 
+.slider-btn{
+  transition:
+    background-position 0.4s ease,
+    filter 0.3s ease,
+    color 0.3s ease;
+}
+
+.slider-btn:hover{
+  background: linear-gradient(
+    120deg,
+    #5b00ff,
+    #3b82f6,
+    #ec4899,
+    #ff0000
+  );
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  animation: heatFlow 2.5s ease infinite;
+
+  filter: drop-shadow(0 0 4px rgba(255,0,100,0.25));
+}
+
 .slider-btn.prev{ left: 0; }
 .slider-btn.next{ right: 0; }
 
