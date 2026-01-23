@@ -47,6 +47,39 @@ body{
   font-weight: 700;
 }
 
+.site-name{
+  transition:
+    background-position 0.6s ease,
+    filter 0.4s ease,
+    color 0.3s ease;
+}
+
+.site-name:hover{
+  background: linear-gradient(
+    120deg,
+    #5b00ff,
+    #3b82f6,
+    #ec4899,
+    #ff0000
+  );
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  animation: heatFlow 3s ease infinite;
+  filter: drop-shadow(0 0 6px rgba(255,0,100,0.35));
+}
+
+@keyframes heatFlow{
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* Nav */
 .site-nav{
   display: flex;
