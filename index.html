@@ -24,9 +24,29 @@
   </header>
 
   <main class="page">
-    <!-- Hero diagram -->
-    <section class="about-hero" aria-label="Key diagram">
-      <img src="assets/img/about/key-diagram.jpg" alt="Key diagram" loading="eager">
+    <!-- Hero diagram slider (About page) -->
+    <section class="about-hero" aria-label="Key diagrams slider">
+      <div class="about-slider" data-slider>
+        <button class="slider-btn prev" type="button" aria-label="Previous" data-prev>‹</button>
+
+        <div class="slider-viewport" data-viewport>
+          <div class="slider-track" data-track>
+            <div class="slide">
+              <img src="assets/img/about/hero-1.jpg" alt="Key diagram 1" loading="eager">
+            </div>
+    
+            <div class="slide">
+              <img src="assets/img/about/hero-2.jpg" alt="Key diagram 2" loading="lazy">
+            </div>
+    
+            <div class="slide">
+              <img src="assets/img/about/hero-3.jpg" alt="Key diagram 3" loading="lazy">
+            </div>
+          </div>
+        </div>
+    
+        <button class="slider-btn next" type="button" aria-label="Next" data-next>›</button>
+      </div>
     </section>
 
     <!-- bio -->
