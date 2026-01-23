@@ -282,7 +282,7 @@ body{
 
 /* Research grid */
 .research-grid{
-  max-width: 1320px;
+  max-width: 1100px;
   margin: 90px auto 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
