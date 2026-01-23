@@ -127,6 +127,14 @@ body{
   }
 }
 /* key diagram */
+
+.about-hero{
+  margin-top: 12px;          
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--side-pad);
+}
 .about-hero img{
   width: 100%;
   height: auto;
