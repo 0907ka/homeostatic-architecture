@@ -149,11 +149,13 @@ body{
 
 .slider-viewport{
   overflow: hidden;
+  pointer-events: none;
 }
 
 .slider-track{
   display: flex;
   transition: transform 220ms ease;
+  pointer-events: none;
 }
 
 .slide{
@@ -168,8 +170,11 @@ body{
   background: transparent;
   border: none;
   font-size: 44px;
-  cursor: pointer;
   color: #111;
+
+  cursor: pointer;        /* 손가락 커서 */
+  z-index: 20;            /* 이미지 위로 */
+  pointer-events: auto;  /* 버튼은 클릭 허용 */
 }
 
 .slider-btn.prev{ left: 0; }
