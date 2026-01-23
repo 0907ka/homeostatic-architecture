@@ -325,7 +325,7 @@ body{
 .research-title{
   margin-top: 14px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.25;
   color: var(--text);
   transition: filter 0.25s ease;
