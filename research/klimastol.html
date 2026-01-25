@@ -1,5 +1,86 @@
-<main class="page">
-  <section class="wip" aria-label="Work in progress">
-    <div class="wip-bar">Work in progress</div>
-  </section>
-</main>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KilmaStol — Ji Yoon Bae</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body data-page="research">
+  <header class="site-header">
+    <a class="site-name" href="../index.html" aria-label="Go to About">JI YOON BAE</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html" data-nav="about">About</a>
+      <a href="../research.html" data-nav="research">Research</a>
+      <a href="../design.html" data-nav="design">Design</a>
+      <a href="../publications.html" data-nav="publications">Publications</a>
+      <a href="../teaching.html" data-nav="teaching">Teaching</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- Title -->
+    <header class="project-head">
+      <h1 class="project-title">KlimaStol</h1>
+      <p class="project-subtitle">3D-printed Cooling Chair for Mitigating Outdoor Heat Stress</p>
+    </header>
+
+    <!-- Slider (same structure as About) -->
+    <section class="project-hero" aria-label="Kilastol image slider">
+      <div class="about-slider" data-slider>
+        <button class="slider-btn prev" type="button" aria-label="Previous" data-prev>‹</button>
+
+        <div class="slider-viewport" data-viewport>
+          <div class="slider-track" data-track>
+            <div class="slide slide--small">
+              <img src="../assets/img/research/klimastol/hero-1.jpg" alt="klimastol image 1" loading="eager">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/klimastol/hero-2.jpg" alt="klimastol image 2" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/klimastol/hero-3.jpg" alt="klimastol image 3" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/klimastol/hero-4.jpg" alt="klimastol image 4" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next" type="button" aria-label="Next" data-next>›</button>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="project-body">
+      <p>
+        Heatwaves, driven by climate change, challenge urban resilience and heighten health risks bydeepening reliance on energy-intensive cooling.
+        This project introduces KlimaStol, a solarpowered, robotically 3D-printed concrete cooling chair designed to mitigate outdoor heat stress through conductive cooling. 
+        Building on a prior wood-based bench, the chair merges ergonomic design with material innovation for efficiency and sustainability. Its contoured form increases body
+        contact for heat transfer, while custom low-carbon, high-conductivity concrete lowers environmental impact. Embedded copper pipes circulate chilled
+        water from a solar-driven heat pump, enabling effective cooling. Robotic fabrication created complex geometries, and infrared imaging verified immediate, uniform surface temperature
+        drops, positioning KlimaStol as resilient outdoor infrastructure.
+      </p>
+
+
+      <p><span class="label">TAL:</span> Dorit Aviv (PI), Ji Yoon Bae (Project Lead), Eric Teitelbaum (AIL Research Inc.), Qinming Huo (MS-EBD), Hong Wei (MS-EBD).</p>
+      <p>PSL: Masoud Akbarzadeh, Yefan Zhi</p>
+      
+      <p><span class="label">Funding:</span> Penn4C</p>
+
+      <h2 class="section-title">Publication</h2>
+      <ul class="pub-list">
+        <li>Bae, Ji Yoon, Yefan Zhi, Eric Teitelbaum, Masoud Akbarzadeh, and Dorit Aviv. 2025. “KlimaStol: 3D-Printed Cooling Chair for Mitigating Outdoor Heat Stress.” the 45th Annual Conference of the Association of Computer-Aided Design in Architecture (ACADIA).</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/slider.js" defer></script>
+</body>
+</html>
