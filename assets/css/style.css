@@ -478,3 +478,157 @@ body{
   font-size: 16px;
   letter-spacing: 0.3px;
 }
+
+/* =========================
+   Mobile Nav (hamburger)
+   ========================= */
+
+/* 기본: 데스크탑에선 모바일 메뉴 숨김 */
+.nav-toggle,
+.mobile-nav{
+  display: none;
+}
+
+/* 모바일에서만 활성화 */
+@media (max-width: 900px){
+
+  /* 데스크탑 nav는 숨기고, 햄버거 버튼 보이게 */
+  .site-nav{
+    display: none;
+  }
+
+  .nav-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: var(--side-pad);
+    top: var(--top-pad);
+    z-index: 50;
+  }
+
+  /* 햄버거 아이콘 (span 하나로 3줄 만들기) */
+  .nav-toggle-icon{
+    width: 26px;
+    height: 2px;
+    background: var(--text);
+    position: relative;
+    display: block;
+    border-radius: 999px;
+  }
+  .nav-toggle-icon::before,
+  .nav-toggle-icon::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 26px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 999px;
+  }
+  .nav-toggle-icon::before{ top: -8px; }
+  .nav-toggle-icon::after{ top: 8px; }
+
+  /* 오버레이 패널 */
+  .mobile-nav{
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+  }
+
+  /* 배경 딤 */
+  .mobile-nav::before{
+    content:"";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.10);
+    opacity: 0;
+    transition: opacity 220ms ease;
+  }
+
+  /* 오른쪽 슬라이드 패널 */
+  .mobile-nav{
+    transform: translateX(100%);
+    transition: transform 220ms ease;
+    background: transparent;
+  }
+
+  /* 열린 상태 */
+  body.nav-open .mobile-nav{
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  body.nav-open .mobile-nav::before{
+    opacity: 1;
+  }
+
+  /* 패널 내용 컨테이너 */
+  .mobile-nav-links{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: min(78vw, 320px);
+    background: var(--bg);
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: -18px 0 50px rgba(0,0,0,0.08);
+  }
+
+  /* 닫기 버튼 */
+  .mobile-nav-close{
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 1;
+    z-index: 2;
+  }
+
+  /* 링크 스타일 */
+  .mobile-nav-links a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 10px 6px;
+  }
+
+  /* hover에 heatflow(선택): 모바일은 hover 거의 없어서, 원하면 남겨 */
+  .mobile-nav-links a:hover{
+    background: linear-gradient(120deg,#5b00ff,#3b82f6,#ec4899,#ff0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heatFlow 2.6s ease infinite;
+  }
+
+  /* active pill을 모바일에도 동일하게 */
+  .mobile-nav-links a.is-active{
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: var(--pill-bg);
+    color: var(--pill-text);
+  }
+
+  /* 열렸을 때 본문 스크롤 락 */
+  body.nav-open{
+    overflow: hidden;
+    touch-action: none;
+  }
+}
