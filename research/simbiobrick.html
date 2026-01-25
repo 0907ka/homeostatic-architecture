@@ -44,17 +44,71 @@
   </header>
 
   <main class="page">
-    <section class="wip" aria-label="Work in progress">
-      <div class="wip-bar">Work in progress</div>
-    </section>
-  </main>
+    <!-- Title -->
+    <header class="project-head">
+      <h1 class="project-title">SimbioBrick</h1>
+      <p class="project-subtitle">Carbon Sequestering Living Bricks by Fungi-Plant Symbiosis</p>
+    </header>
 
-  <!-- JS (있다면) -->
-  <script src="assets/js/main.js" defer></script>
+    <!-- Slider (same structure as About) -->
+    <section class="project-hero" aria-label="Kilastol image slider">
+      <div class="about-slider" data-slider>
+        <button class="slider-btn prev" type="button" aria-label="Previous" data-prev>‹</button>
+
+        <div class="slider-viewport" data-viewport>
+          <div class="slider-track" data-track>
+            <div class="slide slide--small">
+              <img src="../assets/img/research/simbiobrick/hero-1.jpg" alt="simbiobrick image 1" loading="eager">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/simbiobrick/hero-2.jpg" alt="simbiobrick image 2" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/simbiobrick/hero-3.jpg" alt="simbiobrick image 3" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/simbiobrick/hero-4.jpg" alt="simbiobrick image 4" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next" type="button" aria-label="Next" data-next>›</button>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="project-body">
+      <p>
+        Harnessing the symbiotic association of plant and fungi, we devised SimbioBrick; a living system that encases 
+        mycorrhizal fungi and alfalfa in a portable pot-like brick cassette that promotes plant growth and carbon seques-tration. 
+        SimbioBrick contains fungal spores, seeds, water, and nutrient-storing hydrogels emulating wet soils. Their outer 
+        geometries are designed to provide structural support in modular assemblies and to expose plants to sunlight for 
+        photosynthesis. Their inner structures mediate depth for fungal colonization and porosity for adequate drainage. 
+        The SimbioBrick system is multifunctional in providing (1) biological behavior driven modular brick design, 
+        (2) indoor and outdoor oxygen production, (3) continuous carbon sequestration, (4) retaining water to self-irrigate, as well as 
+        (5) soil-bioremediation in our future work. Applications of the SimbioBrick system are living building components 
+        supporting bio-receptive architecture, such as substitution of heavy, multi-material, energy intensive, 
+        and non-recyclable green facades, or production of new outdoor flooring able to pave walkways while offsetting 
+        carbon emission from buildings and bio-remediating polluted soils beneath.
+      </p>
+
+      <p><span class="label">TAL:</span> Ji Yoon Bae (Project Lead) Laia Mogas-Soldevila.</p>
+      
+      <p><span class="label">Funding:</span> Environmental Innovations Initiative (EII) Grants at University of Pennsylvania.</p>
+
+      <h2 class="section-title">Publication</h2>
+      
+      <ul class="pub-list">
+        <li>Bae, Ji Yoon, Dorit Aviv, and Laia Mogas-Soldevila. 2024. “SimbioBrick: Carbon Sequestering Living Bricks by Fungi-Plant Symbiosis.” 
+          In 2024 Design Modeling Symposium: Scalable Disruptors, Kassel, Germany.</li>
+      </ul>
+    </section>
   </main>
 
   <script src="../assets/js/main.js" defer></script>
   <script src="../assets/js/slider.js" defer></script>
 </body>
 </html>
-
