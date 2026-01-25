@@ -90,6 +90,7 @@ body{
   gap: 22px;
   align-items: center;
   white-space: nowrap;
+  margin-left: auto;
 }
 
 .site-nav a{
