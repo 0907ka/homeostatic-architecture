@@ -632,3 +632,28 @@ body{
     touch-action: none;
   }
 }
+
+/* mobile: slider images full width */
+@media (max-width: 900px){
+  .slider-viewport{
+    overflow: hidden;
+  }
+
+  /* 각 슬라이드에서 이미지가 화면 가로 꽉 차게 */
+  .slide img{
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    object-fit: contain; /* cover 말고 contain 유지(잘림 방지) */
+    display: block;
+  }
+
+  /* (선택) full/medium/small 개별 규칙이 모바일에서 발목 잡으면 무력화 */
+  .slide--full img,
+  .slide--medium img,
+  .slide--small img{
+    max-width: none;
+    max-height: none;
+  }
+}
