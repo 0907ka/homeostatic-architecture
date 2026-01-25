@@ -116,6 +116,35 @@ body{
   text-decoration: none;
 }
 
+/* active link (현재 페이지) */
+.site-nav a[aria-current="page"],
+.site-nav a.is-active{
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  background: none;          /* 중요: 여기서 background 제거 */
+  -webkit-text-fill-color: currentColor;
+}
+
+.site-nav a[aria-current="page"]::before,
+.site-nav a.is-active::before{
+  content: "";
+  position: absolute;
+  inset: 0;                  /* 링크 박스 전체 */
+  background: var(--pill-bg, #111);
+  border-radius: 10px;        /* 너 pill radius랑 맞추기 */
+  z-index: -1;                /* 텍스트 뒤로 */
+}
+
+.site-nav a[aria-current="page"]:hover,
+.site-nav a.is-active:hover{
+  background: linear-gradient(120deg,#5b00ff,#3b82f6,#ec4899,#ff0000);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heatFlow 2.6s ease infinite;
+}
+
 /* Main layout */
 .page{
   padding: 0 var(--side-pad) 80px var(--side-pad);
