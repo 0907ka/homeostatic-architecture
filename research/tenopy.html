@@ -1,11 +1,86 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TENOPY</title>
+  <title>TENOPY — Ji Yoon Bae</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
-<body>
-  <p>Coming soon.</p>
+
+<body data-page="research">
+  <header class="site-header">
+    <a class="site-name" href="../index.html" aria-label="Go to About">JI YOON BAE</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html" data-nav="about">About</a>
+      <a href="../research.html" data-nav="research">Research</a>
+      <a href="../design.html" data-nav="design">Design</a>
+      <a href="../publications.html" data-nav="publications">Publications</a>
+      <a href="../teaching.html" data-nav="teaching">Teaching</a>
+      <a href="../news.html" data-nav="news">News</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- Title -->
+    <header class="project-head">
+      <h1 class="project-title">TENOPY</h1>
+      <p class="project-subtitle">Solar-powered Open-air Cooling Shelter for Heat Mitigation</p>
+    </header>
+
+    <!-- Slider (same structure as About) -->
+    <section class="project-hero" aria-label="TENOPY image slider">
+      <div class="about-slider project-slider" data-slider>
+        <button class="slider-btn prev" type="button" aria-label="Previous" data-prev></button>
+
+        <div class="slider-viewport" data-viewport>
+          <div class="slider-track" data-track>
+            <div class="slide slide--full">
+              <img src="../assets/img/research/tenopy/hero-1.jpg" alt="TENOPY image 1" loading="eager">
+            </div>
+
+            <div class="slide slide--medium">
+              <img src="../assets/img/research/tenopy/hero-2.jpg" alt="TENOPY image 2" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/tenopy/hero-3.jpg" alt="TENOPY image 3" loading="lazy">
+            </div>
+
+            <div class="slide slide--full">
+              <img src="../assets/img/research/tenopy/hero-4.jpg" alt="TENOPY image 4" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next" type="button" aria-label="Next" data-next></button>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="project-body">
+      <p>
+        The Thermal Architecture Lab is proud to present TENOPY: a novel prototype for urban cooling, responding to the Urban Heat Island (UHI) effect.
+        It is a result of a collaboration with the North 10 community organization in North Philadelphia, located in a neighborhood severely affected by UHI,
+        and with Penn Nursing, and Penn Engineering, through the Penn4C initiative.
+      </p>
+
+      <p>
+        TENOPY is a fully solar-powered, shaded, open-air urban cooling shelter, with a cooling bench, and condensation-free radiant panels that provide sustainable urban cooling.
+      </p>
+
+      <p><span class="label">Team:</span> Dorit Aviv (PI), Ji Yoon Bae (Project Lead), Wayne Chang, Hanzhong Luo (Thermal Architecture Lab); Elizabeth Esan (School of Arts and Sciences).</p>
+      <p><span class="label">Funding:</span> Penn4C</p>
+
+      <h2 class="section-title">Publication</h2>
+      <ul class="pub-list">
+        <li>Publication item 1 (add later)</li>
+        <li>Publication item 2 (add later)</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/slider.js" defer></script>
 </body>
 </html>
