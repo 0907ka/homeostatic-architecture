@@ -372,13 +372,13 @@ body{
 
 .project-title{
   margin: 0 0 6px 0;
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 0.2px;
 }
 
 .project-subtitle{
   margin: 0;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.4;
   color: #111;
 }
@@ -396,6 +396,7 @@ body{
 .project-body p{
   margin: 0 0 18px 0;
   line-height: 1.65;
+  font-size: 14px;
 }
 
 .label{
