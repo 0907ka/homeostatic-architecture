@@ -44,13 +44,60 @@
   </header>
 
   <main class="page">
-    <section class="wip" aria-label="Work in progress">
-      <div class="wip-bar">Work in progress</div>
-    </section>
-  </main>
+    <!-- Title -->
+    <header class="project-head">
+      <h1 class="project-title">Elephant Skin-inspired Building Skin</h1>
+      <p class="project-subtitle">Evaporative cooling through crack pattern engraved hygroscopic materials</p>
+    </header>
 
-  <!-- JS (있다면) -->
-  <script src="assets/js/main.js" defer></script>
+    <!-- Slider (same structure as About) -->
+    <section class="project-hero" aria-label="Elephant image slider">
+      <div class="about-slider" data-slider>
+        <button class="slider-btn prev" type="button" aria-label="Previous" data-prev>‹</button>
+
+        <div class="slider-viewport" data-viewport>
+          <div class="slider-track" data-track>
+            <div class="slide slide--small">
+              <img src="../assets/img/research/elephant/hero-1.jpg" alt="elephant image 1" loading="eager">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/elephant/hero-2.jpg" alt="elephant image 2" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/elephant/hero-3.jpg" alt="elephant image 3" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/elephant/hero-4.jpg" alt="elephant image 4" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next" type="button" aria-label="Next" data-next>›</button>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="project-body">
+      <p>
+        This research presents an evaporative cooling screen inspired by African elephant thermoregulation, proposing a material-driven strategy 
+        to reduce mechanical cooling energy loads under hot conditions. Drawing from the thermoregulatory strategy of elephants, which retain 
+        water within cracked skin surfaces to enable evaporative heat dissipation, the building screen integrates hygroscopic materials with 
+        designed surface cracking to store moisture and reduce surrounding thermal stress through evaporation, framing the system as a climate-responsive 
+        architectural screen. The research follows a multi-scalar methodology: (1) an in-depth biological and anatomical analysis of African elephant 
+        cooling strategies informs their architectural translation; (2) hygroscopic materials are selected through material experiments evaluating 
+        structural and chemical stability, durability, and water retention capacity; (3) crack morphology is developed through a generative design 
+        process that maximizes moisture retention and inter-crack channeling; and (4) a structurally stable physical prototype is fabricated and 
+        tested under real climatic conditions to evaluate environmental performance. This work frames design modeling as a mediating process 
+        through which the latent thermodynamic behavior of hygroscopic materials is articulated and amplified.
+      </p>
+
+      <p><span class="label">TAL:</span> Ji Yoon Bae (Project Lead), Dorit Aviv</p>
+      <p><span class="label">In collaboration with:</span> Shu Yang Group (Penn Material Science) and Jenny Sabin (Cornell Tech)</p>
+
+    </section>
   </main>
 
   <script src="../assets/js/main.js" defer></script>
