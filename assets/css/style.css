@@ -277,8 +277,8 @@ body{
   filter: drop-shadow(0 0 4px rgba(255,0,100,0.25));
 }
 
-.slider-btn.prev{ left: 50px; }
-.slider-btn.next{ right: 50px; }
+.slider-btn.prev{ left: 0; }
+.slider-btn.next{ right: 0; }
 
 /* Research grid */
 .research-grid{
