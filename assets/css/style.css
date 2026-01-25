@@ -197,9 +197,7 @@ body{
   object-fit: contain;
 }
 
-.about-slider,
-.project-slider,
-.research-slider{
+.about-slider{
   position: relative;
 }
 
