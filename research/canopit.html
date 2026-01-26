@@ -1,1 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canopit — Ji Yoon Bae</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
 
+<body data-page="research">
+  <header class="site-header">
+    <a class="site-name" href="../index.html" aria-label="Go to About">Ji Yoon Bae</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html" data-nav="about">About</a>
+      <a href="../research.html" data-nav="research">Research</a>
+      <a href="../design.html" data-nav="design">Design</a>
+      <a href="../publications.html" data-nav="publications">Publications</a>
+      <a href="../teaching.html" data-nav="teaching">Teaching</a>
+    </nav>
+
+    <!-- mobile nav toggle (mobile only) -->
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    
+    <!-- mobile nav panel (mobile only) -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <button class="mobile-nav-close" type="button" aria-label="Close menu">×</button>
+    
+      <nav class="mobile-nav-links" aria-label="Mobile">
+        <a href="index.html" data-nav="about">About</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="design.html" data-nav="design">Design</a>
+        <a href="publications.html" data-nav="publications">Publications</a>
+        <a href="teaching.html" data-nav="teaching">Teaching</a>
+      </nav>
+    </div>
+    
+    <!-- overlay -->
+    <div class="mobile-nav-overlay" data-nav-overlay></div>
+  </header>
+
+  <main class="page">
+    <!-- Title -->
+    <header class="project-head">
+      <h1 class="project-title">Canopit</h1>
+      <p class="project-subtitle">Valorizing Unavoidable Fruit Waste into Printable Biomaterial Surfaces for Participatory Learning</p>
+    </header>
+
+    <!-- Slider (same structure as About) -->
+    <section class="project-hero" aria-label="Kilastol image slider">
+      <div class="about-slider" data-slider>
+        <button class="slider-btn prev" type="button" aria-label="Previous" data-prev>‹</button>
+
+        <div class="slider-viewport" data-viewport>
+          <div class="slider-track" data-track>
+            <div class="slide slide--small">
+              <img src="../assets/img/research/canopit/hero-1.jpg" alt="canopit image 1" loading="eager">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/canopit/hero-2.jpg" alt="canopit image 2" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/canopit/hero-3.jpg" alt="canopit image 3" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/canopit/hero-4.jpg" alt="canopit image 4" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next" type="button" aria-label="Next" data-next>›</button>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="project-body">
+      <p>
+        CanoPIT proposes a canopy structure composed of fruit-based
+        biomaterials that transforms unavoidable food waste from
+        stone fruits into bio-based printable blends outputting strong,
+        healthy, biodegradable, and functional large-scale surfaces.
+        The interdisciplinary approach combines biomaterial blend
+        development and hierarchical additive fabrication technology
+        to develop a multi-layered bio-surface with multiple benefits,
+        acting as (1) seasonal weather protection for community events,
+        (2) educational beacons for a waste-free sustainable materials
+        future, and (3) testing platforms collecting data to channel future
+        design for decay.
+      </p>
+
+      <p><span class="label">Team:</span> Yuanyi Cen, Ji Yoon Bae, Andreina Sojo, Laia Mogas-Soldevila.</p>
+
+      <h2 class="section-title">Publication</h2>
+      
+      <ul class="pub-list">
+        <li>Cen, Yuanyi, Ji Yoon Bae, Andreina Sojo, Abigail Weinstein, Laia Mogas-Soldevila. 
+          “CanoPIT: Valorizing Unavoidable Fruit Waste into Printable Biomaterial Surfaces for Participatory Learning,” 
+          in 112th ACSA Annual Meeting Proceedings, Disruptors on the Edge (112th ACSA Annual Meeting, ACSA Press, 2024), 284–90.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/slider.js" defer></script>
+</body>
+</html>
