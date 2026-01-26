@@ -1,1 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeoBrick — Ji Yoon Bae</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
 
+<body data-page="research">
+  <header class="site-header">
+    <a class="site-name" href="../index.html" aria-label="Go to About">Ji Yoon Bae</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html" data-nav="about">About</a>
+      <a href="../research.html" data-nav="research">Research</a>
+      <a href="../design.html" data-nav="design">Design</a>
+      <a href="../publications.html" data-nav="publications">Publications</a>
+      <a href="../teaching.html" data-nav="teaching">Teaching</a>
+    </nav>
+
+    <!-- mobile nav toggle (mobile only) -->
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    
+    <!-- mobile nav panel (mobile only) -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <button class="mobile-nav-close" type="button" aria-label="Close menu">×</button>
+    
+      <nav class="mobile-nav-links" aria-label="Mobile">
+        <a href="index.html" data-nav="about">About</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="design.html" data-nav="design">Design</a>
+        <a href="publications.html" data-nav="publications">Publications</a>
+        <a href="teaching.html" data-nav="teaching">Teaching</a>
+        <a href="news.html" data-nav="news">News</a>
+      </nav>
+    </div>
+    
+    <!-- overlay -->
+    <div class="mobile-nav-overlay" data-nav-overlay></div>
+  </header>
+
+  <main class="page">
+    <!-- Title -->
+    <header class="project-head">
+      <h1 class="project-title">NeoBrick</h1>
+      <p class="project-subtitle">Environmentally Informed 3D-Printed Lattice Brick for Modulating Indoor Thermal Comfort</p>
+    </header>
+
+    <!-- Slider (same structure as About) -->
+    <section class="project-hero" aria-label="NeoBrick image slider">
+      <div class="about-slider" data-slider>
+        <button class="slider-btn prev" type="button" aria-label="Previous" data-prev>‹</button>
+
+        <div class="slider-viewport" data-viewport>
+          <div class="slider-track" data-track>
+            <div class="slide slide--small">
+              <img src="../assets/img/research/neobrick/hero-1.jpg" alt="neobrick image 1" loading="eager">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/neobrick/hero-2.jpg" alt="neobrick image 2" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/neobrick/hero-3.jpg" alt="neobrick image 3" loading="lazy">
+            </div>
+
+            <div class="slide slide--small">
+              <img src="../assets/img/research/neobrick/hero-4.jpg" alt="neobrick image 4" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next" type="button" aria-label="Next" data-next>›</button>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="project-body">
+      <p>
+        NeoBrick is a 3D clay-printed brick prototype that explores generative design processes coupled with 
+        environmental inputs as design drivers. Maintaining indoor thermal comfort by utilizing a passive cooling 
+        strategy contributes to energy efficiency and healthy indoor air environment in a specific climatic context 
+        such as tropical climate zones. In this aspect, clay is a locally accessible material that brings thermal 
+        benefits for cooling due to the low heat conductivity. Moreover, environmental simulations and additive 
+        manufacturing techniques are emerging as key drivers for designing and testing a performance-driven architectural systems. 
+        This paper introduces an integrated research workflow that develops a Triply Periodic Minimal Surface (TPMS)-informed 
+        clay-printed brick system. The brick geometries are informed by environmental feedback including airflow and heat 
+        transfer performance. To articulate this environmentally performing clay brick prototype, first, this research 
+        leverages computational fluid dynamics (CFD) and heat transfer analysis to inform and evaluate brick geometries. 
+        Second, the research utilizes an additive manufacturing technology with customized toolpaths for fabricating 
+        non-standard brick geometries. Lastly, the research delivers a possible residential architectural application 
+        in a specific climate condition, Ho Chi Minh City, Vietnam, to suggest a possible adaptation of the passive 
+        ventilation system for enhancing the thermal environment and energy efficiency.
+      </p>
+
+      <p><span class="label">Team:</span> Ji Yoon Bae, Jenny E. Sabin</p>
+      
+      <p><span class="label">Funding:</span> This project is supported by Cornell AAP and Jenny Sabin Lab</p>
+
+      <h2 class="section-title">Publication</h2>
+      
+      <ul class="pub-list">
+        <li>Bae, Ji Yoon, and Jenny Sabin. 2023. “Neobrick: Environmentally Informed 3D-Printed Lattice Brick for 
+          Modulating Indoor Thermal Comfort.” In In World Congress of Architects: Design for Climate Adaptation. 
+          Springer International Publishing.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/slider.js" defer></script>
+</body>
+</html>
