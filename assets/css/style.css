@@ -87,6 +87,9 @@ body{
 .site-nav{
   display: flex;
   gap: 22px;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: max;
 }
 
 .site-nav a{
