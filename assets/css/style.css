@@ -91,6 +91,7 @@ body{
   align-items: center;
   white-space: nowrap;
   margin-left: auto;
+  margiin-right: 16px;
 }
 
 .site-nav a{
