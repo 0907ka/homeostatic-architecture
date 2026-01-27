@@ -38,8 +38,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: var(--top-pad) var(--side-pad) 24px var(--side-pad);
+  padding: var(--top-pad) var(--side-pad);
 }
 
 .site-name{
@@ -90,8 +89,6 @@ body{
   gap: 22px;
   align-items: center;
   white-space: nowrap;
-  margin-left: auto;
-  margiin-right: 16px;
 }
 
 .site-nav a{
