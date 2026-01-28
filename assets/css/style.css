@@ -659,3 +659,90 @@ body{
     max-height: none;
   }
 }
+
+/* Publications */
+.pubs{
+  max-width: var(--maxw);
+  margin: 46px auto 0 auto;
+  padding: 0 var(--side-pad);
+}
+
+.pub-year{
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  gap: 18px;
+  margin: 34px 0 18px 0;
+}
+
+.pub-year-label{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.pub-year-line{
+  height: 1px;
+  background: rgba(0,0,0,0.35);
+}
+
+.pub-item{
+  position: relative;
+  padding: 0 0 40px 0; /* 아래에 링크 들어갈 공간 */
+  margin: 0 0 28px 0;
+}
+
+.pub-cite{
+  margin: 0;
+  max-width: 860px; /* 스샷처럼 왼쪽 폭 제한 */
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Go to Article: 오른쪽 아래 */
+.pub-link{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* heatflow 링크(네비에서 쓰던 느낌으로 재사용) */
+.heatflow-link{
+  background-image: linear-gradient(
+    90deg,
+    #5B8CFF 0%,
+    #9B5BFF 25%,
+    #FF5BA6 50%,
+    #FFC65B 75%,
+    #5B8CFF 100%
+  );
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+
+  transition: background-position 0.45s ease, filter 0.25s ease;
+}
+
+.heatflow-link:hover{
+  background-position: 100% 50%;
+  filter: saturate(1.2);
+}
+
+/* 모바일: Go to Article를 아래로 내리고 오른쪽 정렬 유지 */
+@media (max-width: 900px){
+  .pub-item{
+    padding-bottom: 34px;
+  }
+  .pub-link{
+    right: 0;
+  }
+}
